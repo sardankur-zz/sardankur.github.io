@@ -80,6 +80,8 @@
             .site-container-sm {
                 padding-top: 4px;
                 padding-bottom: 4px;
+                text-align: justify;
+                text-justify: inter-word;
             }
 
     		.site-text-header {
@@ -111,16 +113,20 @@
                 <div style="display: table; width: 100%; height: 100%;">
                     <div style="display: table-row; width: 100%; height: 100%">
                         <div style="display: table-cell; height: 100%; text-align: left; vertical-align: middle">
-                            <span class="site-text-nav-title">ankur&nbsp;sarda</span>
+                            <span class="site-text-nav-title"><a href="#home">ankur&nbsp;sarda</a></span>
                         </div>
                         <div style="display: table-cell; height: 100%; text-align: right; vertical-align: middle" class="site-text-nav">
-                            <span class="site-underline">Projects &amp; Hacks</span>
+                            <span class="site-underline"><a href="#projects">Projects</a></span>
                             &nbsp; | &nbsp; 
-                            <span class="site-underline">Work Experience </span>
+                            <span class="site-underline"><a href="#hacks">Hacks</a></span>
                             &nbsp; | &nbsp; 
-                            <span class="site-underline">Photography </span>
+                            <span class="site-underline"><a href="#workex">Work Experience</a></span>
                             &nbsp; | &nbsp; 
-                            <span class="site-underline">Contact</span>
+                            <span class="site-underline"><a href="#activites">Activities</a></span>
+                            &nbsp; | &nbsp; 
+                            <span class="site-underline"><a href="#photography">Photography</a></span>
+                            &nbsp; | &nbsp;                             
+                            <span class="site-underline"><a href="#contact">Contact</a></span>
                         </div>
                     </div>
                 </div>                                    
@@ -129,14 +135,14 @@
 		<div class="site-divider"></div>
 		<div class="site-body">
 			<div class="site-margin-left site-margin-right">
-				<div class="site-container site-text">				
+				<div class="site-container site-text" id="home">				
                     <div>
-					Hi there! My name is Ankur and am currently pursuing my Masters' in <span class="site-underline"><a target="_blank" href="https://www.cs.stonybrook.edu/">Computer Science @ Stony Brook University</a></span>.
+					Hi there! My name is Ankur and am currently pursuing my Masters' in <span class="site-underline"><a target="_blank" href="https://www.cs.stonybrook.edu/">Computer Science @ Stony Brook University</a></span>. My interests are varied. Currently I am drawn to Human Computer Interaction and Machine Learning. I also have fascination for distributed data computation, web, linux and networking. I often go to hackathons, and pursue hacks/projects of my own. When not coding, I take to photography, sketching, trekking, guitar, wikipedia and youtube maze.
                     </div>                                        
 				</div>
 				<div class="site-divider"></div>
-				<div class="site-container site-text">			
-					<div class="site-text-header">Projects &amp; Hacks</div>
+				<div class="site-container site-text" id="projects">			
+					<div class="site-text-header">Projects</div>
                     <ul>
                         <li style="padding-top: 0px;">
                              <div style="display: table; width: 100%">
@@ -145,14 +151,15 @@
                                         <span class="site-text-subheader">Email Text to UI</span>
                                     </div>
                                     <div style="display: table-cell; text-align: right; width: 50%">
+                                        <span class="site-text-subsubheader">[Self]</span>&nbsp;&nbsp;
                                         <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://github.com/sardankur/actions">[Source]</a></span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://bit.ly/Email2UI">[Report]</a></span>&nbsp;&nbsp;
+                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://bit.ly/Email2UI">[Report]</a></span>&nbsp;&nbsp;                                        
                                         <span class="site-text-subsubheader">[Sept 2016 - Dec 2016]</span>                                        
                                     </div>
                                 </div>
                             </div>                                
                             <div style="width: 100%" class="site-container-sm"> 
-                                <span>An AI assistant which scans email text to extract questions which needs to be answered. On these sentences, Machine Learning is applied to determine type of questions and is mapped to an HTML form.</span>          
+                                <span>To simplify email conversations, an AI assistant in the form of a chrome extension tuned to gmail Web-Client, uses a classifier built using machine learning to find question that needs to be answered/replied. These are further bucketed into certain types of questions which are mapped to UI elements. For eg., a boolean question is mapped to a checkbox, an open ended question is mapped to a input text box etc.</span>          
                             </div>  
                         </li>
                         <li>
@@ -162,203 +169,328 @@
                                         <span class="site-text-subheader">English Premier League Table Prediction</span>
                                     </div>
                                     <div style="display: table-cell; text-align: right; width: 50%">
+                                        <span class="site-text-subsubheader">[Team of 3]</span>&nbsp;&nbsp;
                                         <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://github.com/sardankur/league-table-prediction">[Source]</a></span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="http://bit.ly/leaguetblprediction">[Report]</a></span>&nbsp;&nbsp;
+                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://bit.ly/leaguetblprediction">[Report]</a></span>&nbsp;&nbsp;                                        
                                         <span class="site-text-subsubheader">[Nov 2016 - Dec 2016]</span>                                        
                                     </div>
                                 </div>
                             </div>                                
                             <div style="width: 100%" class="site-container-sm"> 
-                                <span>An AI assistant which scans email text to extract questions which needs to be answered. On these sentences, Machine Learning is applied to determine type of questions and is mapped to an HTML form.</span>          
+                                <span>This project aims to predict the final standing table of English Premier League. Using data from 2008-2015, we were able to get a accuracy of 87% on predicting season of 2016. We used several features like player rating, past performances. By using highly correlated features only, we tested several machine learning algorithms and performed analysis.</span>          
                             </div>  
                         </li>
                         <li>
                             <div style="display: table; width: 100%">
                                 <div style="display: table-row;">
                                     <div style="display: table-cell; text-align: left; width: 50%">
-                                        <span class="site-text-subheader site-underline">Email Text to UI</span>
+                                        <span class="site-text-subheader">Per-Process System Call Vector</span>
                                     </div>
-                                    <div style="display: table-cell; text-align: right; width: 50%">
-                                        <span class="site-text-subsubheader site-underline">[Source]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader site-underline">[Report]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader">[Sept 2016 - Dec 2016]</span>                                        
+                                    <div style="display: table-cell; text-align: right; width: 50%">            
+                                        <span class="site-text-subsubheader">[Team of 3]</span>&nbsp;&nbsp;
+                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://github.com/sardankur/perprocess-syscall-tbl">[Source]</a></span>&nbsp;&nbsp;
+                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="http://bit.ly/perprocess-syscall">[Report]</a></span>&nbsp;&nbsp; 
+                                        <span class="site-text-subsubheader">[Oct 2016 - Dec 2016]</span>                                        
                                     </div>
                                 </div>
                             </div>                                
                             <div style="width: 100%" class="site-container-sm"> 
-                                <span>An AI assistant which scans email text to extract questions which needs to be answered. On these sentences, Machine Learning is applied to determine type of questions and is mapped to an HTML form.</span>          
+                                <span>This project aim was to provide an alternate mechanism to override existing system calls in linux operating system. The flexibility of having different system calls per process for eg, a web server should not be allowed to create new files in the system, hence mkdir call can be replaced with special mkdir call which prohibits that. My undertaking in this project was to come up with an overall design and provide low level API to deal with maintainance(adding/removing/replacing) of system calls for processes, usage statistics and handling race conditions. </span>          
                             </div>  
-                        </li>                        
+                        </li>
+                        <li>
+                            <div style="display: table; width: 100%">
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 50%">
+                                        <span class="site-text-subheader">Test Framework for MAAP - Apache Spark Web Server</span>
+                                    </div>
+                                    <div style="display: table-cell; text-align: right; width: 50%">            
+                                        <span class="site-text-subsubheader">[Self - Goldman Sachs]</span>&nbsp;&nbsp;
+                                        <span class="site-text-subsubheader">[Jan 2016 - Jul 2016]</span>                                        
+                                    </div>
+                                </div>
+                            </div>                                
+                            <div style="width: 100%" class="site-container-sm"> 
+                                <span>Measurement as a Service is a new platform being developed @ Goldman Sachs. The idea is to provide an interpretable language to define transformations before ingestion. The transformation is described in a neatly defined API built on scala with additional API's not supported by Apache Spark. The computation is performed using Apache Spark. My role was to transform Apache Spark into a Web Server which can accept/delete jobs, provide statuses of existing jobs. The challenge was to handle different job requests, load balancing and management of spark nodes/processes. This test server was conceptualized as a way to test transformations written by data scientists.</span>          
+                            </div>  
+                        </li>  
+                        <li>
+                            <div style="display: table; width: 100%">
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 50%">
+                                        <span class="site-text-subheader">MOSAIC</span>
+                                    </div>
+                                    <div style="display: table-cell; text-align: right; width: 50%">            
+                                        <span class="site-text-subsubheader">[Part of Risk and Control Team - Goldman Sachs]</span>&nbsp;&nbsp;
+                                        <span class="site-text-subsubheader">[Aug 2014 - Dec 2015]</span>                                        
+                                    </div>
+                                </div>
+                            </div>                                
+                            <div style="width: 100%" class="site-container-sm"> 
+                                <span>MOSAIC is a workflow engine designed to ease and fasten the development process for traditional workflow applications. Using a workflow, security and UI specification, MOSAIC rendered screens automatically and provided coherent UX. I had the opportunity to work on the development of core engine, infrastructure upgrades like additional nodes, load balancing, security - HTTPS, client negotiations and build applications on top of MOSAIC on behalf of non technical clients.</span>          
+                            </div>  
+                        </li>
+                        <li>
+                            <div style="display: table; width: 100%">
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 50%">
+                                        <span class="site-text-subheader">Cards</span>
+                                    </div>
+                                    <div style="display: table-cell; text-align: right; width: 50%">       
+                                        <span class="site-text-subsubheader">[Self]</span>&nbsp;&nbsp;      
+                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://github.com/sardankur/cards">[Source]</a></span>&nbsp;&nbsp;                           
+                                        <span class="site-text-subsubheader">[Sept 2015 - Present]</span>                                        
+                                    </div>
+                                </div>
+                            </div>                                
+                            <div style="width: 100%" class="site-container-sm"> 
+                                <span>Through this project, I want to redefine our way of communication. The idea is to create small actionable cards as contents that can be sent to users. For eg., If I were to schedule a meeting with a person, I will recieve a card which has a date and time duration option which needs to filled and sent. I am still working on the prototype of this concept in the form of an android application.</span>          
+                            </div>  
+                        </li>                               
+                        <li>
+                            <div style="display: table; width: 100%">
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 50%">
+                                        <span class="site-text-subheader">Real Time Handwritten Content Collaboration</span>
+                                    </div>
+                                    <div style="display: table-cell; text-align: right; width: 50%">        
+                                        <span class="site-text-subsubheader">[Team of 3]</span>&nbsp;&nbsp;      
+                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://github.com/sardankur/RHCC">[Source]</a></span>&nbsp;&nbsp;                
+                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://bit.ly/rhccollab">[Report]</a></span>&nbsp;&nbsp;                                                                 
+                                        <span class="site-text-subsubheader">[Jan 2014 - May 2014]</span>                                        
+                                    </div>
+                                </div>
+                            </div>                                
+                            <div style="width: 100%" class="site-container-sm"> 
+                                <span>This project creates a physical handwritten collaboration framework wherein a camera and projector will be used to give the feel of collaboration using an ordinary pen and paper. Also support for collaboration via mobile devices is provided. The users can scribble, draw, design, brainstorm on the paper or mobile devices and share their work. Open CV is used to identify the scannable area. Websockets is used for communication between the groups.</span>          
+                            </div>  
+                        </li>
+                        <li>
+                            <div style="display: table; width: 100%">
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 50%">
+                                        <span class="site-text-subheader">Tayga - NAT64</span>
+                                    </div>
+                                    <div style="display: table-cell; text-align: right; width: 50%">
+                                        <span class="site-text-subsubheader">[Team of 2]</span>&nbsp;&nbsp;      
+                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://github.com/sardankur/tayga">[Source]</a></span>&nbsp;&nbsp;                
+                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://codexaost.blogspot.com/">[Blog]</a></span>&nbsp;&nbsp;                                                                 
+                                        <span class="site-text-subsubheader">[Sept 2013 - Dec 2013]</span>   
+                                    </div>
+                                </div>
+                            </div>                                
+                            <div style="width: 100%" class="site-container-sm"> 
+                                <span>TAYGA is an open source NAT64 software, implemented in such a way that it performs transparent mapping ,that is 1 to 1 mapping. For every IPv6 it assigns an IPv4 address and performs packet conversion. To improve efficiency, we make it Stateful by maintaining N:1 mapping of the state via port number and IP address combination. Both UDP/TCP states are supported, and intermediate states of TCP is also maintained.</span>          
+                            </div>  
+                        </li>
+                        <li>
+                            <div style="display: table; width: 100%">
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 50%">
+                                        <span class="site-text-subheader">Intuit Composite App</span>
+                                    </div>
+                                    <div style="display: table-cell; text-align: right; width: 50%">
+                                    <span class="site-text-subsubheader">[Self - Intuit]</span>&nbsp;&nbsp;  
+                                    <span class="site-text-subsubheader">[Jun 2013 - Jul 2013]</span>                                        
+                                    </div>
+                                </div>
+                            </div>                                
+                            <div style="width: 100%" class="site-container-sm"> 
+                                <span>Intuit has many mobile applications which are related and have same client directory. As part of a proof of concept, I developed a composite app which took many existing intuit applications with common client list. These smaller applications could be installed into current working environment of the user by a simple drag-drop onto the main screen. The screen automatically re-adjusts itself. Also these smaller applications could define APIs with the help of which it could interact with one-another.</span>          
+                            </div>  
+                        </li>
+                        <li>
+                            <div style="display: table; width: 100%">
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 50%">
+                                        <span class="site-text-subheader">Virtual Classroom</span>
+                                    </div>
+                                    <div style="display: table-cell; text-align: right; width: 50%">                                    
+                                    <span class="site-text-subsubheader">[Project Lead for Team of 13]</span>&nbsp;&nbsp;      
+                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://github.com/sardankur/virtual-classroom">[Source]</a></span>&nbsp;&nbsp;                
+                                    <span class="site-text-subsubheader">[Feb 2013 - April 2013]</span>                                        
+                                    </div>
+                                </div>
+                            </div>                                
+                            <div style="width: 100%" class="site-container-sm"> 
+                                <span>A distance education learning facility through which a teacher broadcasts his/her live audio/video feed and presentation material to students. Students can communicate with the teacher using chat functionality in real time. A shared calendar system was used to view lecture schedules and to sign up for classes. Websockets and WebRTC was used for networking and group sharing aspect which significantly improved performance due to peer-to-peer model rather than a client-server model. I was the project lead of a team comprising 13 people.</span>          
+                            </div>  
+                        </li>                                                                                       
                     </ul>
 				</div>   
-                <div class="site-container site-text">          
+                <div class="site-container site-text" style="padding-top: 0px" id="hacks">          
+                    <div class="site-text-header">Hacks</div>
+                    <ul>    
+                        <li>
+                            <div style="display: table; width: 100%">
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 50%">
+                                        <span class="site-text-subheader">Audio Enabled Webpages</span>
+                                    </div>
+                                    <div style="display: table-cell; text-align: right; width: 50%">            
+                                    <span class="site-text-subsubheader">[Self]</span>&nbsp;&nbsp;  
+                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://github.com/sardankur/audio-webpages">[Source]</a></span>&nbsp;&nbsp;                                                                                
+                                        <span class="site-text-subsubheader">[Jun 2015 - Jul 2015]</span>                                        
+                                    </div>
+                                </div>
+                            </div>                                
+                            <div style="width: 100%" class="site-container-sm"> 
+                                <span>A simple hack which used google chrome's voice recognition feature and applies to any web page using chrome extension. With a click of button, voice can be used to write emails, fill forms etc in any HTML page. Multiple forms, and iframes are also handled.</span>          
+                            </div>  
+                        </li>  
+                        <li>
+                            <div style="display: table; width: 100%">
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 50%">
+                                        <span class="site-text-subheader">Mood Nation</span>
+                                    </div>
+                                    <div style="display: table-cell; text-align: right; width: 50%">          
+                                        <span class="site-text-subsubheader">[Team of 3]</span>&nbsp;&nbsp;  
+                                        <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://github.com/sardankur/mood-nation">[Source]</a></span>&nbsp;&nbsp;                                                                                
+                                        <span class="site-text-subsubheader">[Jun 2014]</span>                                        
+                                    </div>
+                                </div>
+                            </div>                                
+                            <div style="width: 100%" class="site-container-sm"> 
+                                <span>As part of a venturecity 24-hour hackathon @ Microsoft R&amp;D, Bangalore, we sought to develop a real time sentiment analysis of twitter feed filtered by hashtags to determine which political party has vote of the majority by the people.</span>          
+                            </div>  
+                        </li>                                                                      
+                        <li>
+                            <div style="display: table; width: 100%">
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 50%">
+                                        <span class="site-text-subheader">Augmented Visiting Card</span>
+                                    </div>
+                                    <div style="display: table-cell; text-align: right; width: 50%">
+                                    <span class="site-text-subsubheader">[Team of 3]</span>&nbsp;&nbsp; 
+                                    <span class="site-text-subsubheader site-underline"><a target="_blank" href="https://www.youtube.com/watch?v=cgNbvF8OPMo">[Video/Demo]</a></span>&nbsp;&nbsp;
+                                    <span class="site-text-subsubheader">[Oct 2012]</span>                                        
+                                    </div>
+                                </div>
+                            </div>                                
+                            <div style="width: 100%" class="site-container-sm"> 
+                                <span>As part of 24-hour hackathon, we sought to develop a smart AR application which detects presence of a visiting card, and annotates it with maps, call, social media profiles etc.</span>          
+                            </div>  
+                        </li>                                      
+                    </ul>
+                </div>   
+                <div class="site-container site-text" style="padding-top: 0px" id="workex">          
                     <div class="site-text-header">Work Experience</div>
                     <ul>
                         <li style="padding-top: 0px;">
                              <div style="display: table; width: 100%">
                                 <div style="display: table-row;">
-                                    <div style="display: table-cell; text-align: left; width: 50%">
-                                        <span class="site-text-subheader site-underline">Email Text to UI</span>
-                                    </div>
-                                    <div style="display: table-cell; text-align: right; width: 50%">
-                                        <span class="site-text-subsubheader site-underline">[Source]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader site-underline">[Report]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader">[Sept 2016 - Dec 2016]</span>                                        
-                                    </div>
-                                </div>
-                            </div>                                
-                            <div style="width: 100%" class="site-container-sm"> 
-                                <span>An AI assistant which scans email text to extract questions which needs to be answered. On these sentences, Machine Learning is applied to determine type of questions and is mapped to an HTML form.</span>          
-                            </div>  
-                        </li>
-                        <li>
-                            <div style="display: table; width: 100%">
+                                    <div style="display: table-cell; text-align: left; width: 100%">
+                                        <span class="site-text-subheader site-underline">Goldman Sachs Group, Inc.</span>
+                                    </div>                                    
+                                </div>                                
                                 <div style="display: table-row;">
-                                    <div style="display: table-cell; text-align: left; width: 50%">
-                                        <span class="site-text-subheader site-underline">Email Text to UI</span>
-                                    </div>
-                                    <div style="display: table-cell; text-align: right; width: 50%">
-                                        <span class="site-text-subsubheader site-underline">[Source]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader site-underline">[Report]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader">[Sept 2016 - Dec 2016]</span>                                        
+                                    <div style="display: table-cell; text-align: left; width: 100%" class="site-text-subsubheader">
+                                        <span>[Jun 2014 - July 2016]</span>&nbsp;&nbsp;                                        
+                                        <span>Technology Analyst</span>
                                     </div>
                                 </div>
-                            </div>                                
-                            <div style="width: 100%" class="site-container-sm"> 
-                                <span>An AI assistant which scans email text to extract questions which needs to be answered. On these sentences, Machine Learning is applied to determine type of questions and is mapped to an HTML form.</span>          
-                            </div>  
+                            </div>                                                            
                         </li>
-                        <li>
-                            <div style="display: table; width: 100%">
-                                <div style="display: table-row;">
-                                    <div style="display: table-cell; text-align: left; width: 50%">
-                                        <span class="site-text-subheader site-underline">Email Text to UI</span>
-                                    </div>
-                                    <div style="display: table-cell; text-align: right; width: 50%">
-                                        <span class="site-text-subsubheader site-underline">[Source]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader site-underline">[Report]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader">[Sept 2016 - Dec 2016]</span>                                        
-                                    </div>
-                                </div>
-                            </div>                                
-                            <div style="width: 100%" class="site-container-sm"> 
-                                <span>An AI assistant which scans email text to extract questions which needs to be answered. On these sentences, Machine Learning is applied to determine type of questions and is mapped to an HTML form.</span>          
-                            </div>  
-                        </li>                        
-                    </ul>
-                </div>   
-                <div class="site-container site-text">          
-                    <div class="site-text-header">Photography</div>
-                    <ul>
                         <li style="padding-top: 0px;">
                              <div style="display: table; width: 100%">
                                 <div style="display: table-row;">
-                                    <div style="display: table-cell; text-align: left; width: 50%">
-                                        <span class="site-text-subheader site-underline">Email Text to UI</span>
-                                    </div>
-                                    <div style="display: table-cell; text-align: right; width: 50%">
-                                        <span class="site-text-subsubheader site-underline">[Source]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader site-underline">[Report]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader">[Sept 2016 - Dec 2016]</span>                                        
-                                    </div>
-                                </div>
-                            </div>                                
-                            <div style="width: 100%" class="site-container-sm"> 
-                                <span>An AI assistant which scans email text to extract questions which needs to be answered. On these sentences, Machine Learning is applied to determine type of questions and is mapped to an HTML form.</span>          
-                            </div>  
-                        </li>
-                        <li>
-                            <div style="display: table; width: 100%">
+                                    <div style="display: table-cell; text-align: left; width: 100%">
+                                        <span class="site-text-subheader site-underline">McAfee Inc.</span>
+                                    </div>                                    
+                                </div>                                
                                 <div style="display: table-row;">
-                                    <div style="display: table-cell; text-align: left; width: 50%">
-                                        <span class="site-text-subheader site-underline">Email Text to UI</span>
-                                    </div>
-                                    <div style="display: table-cell; text-align: right; width: 50%">
-                                        <span class="site-text-subsubheader site-underline">[Source]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader site-underline">[Report]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader">[Sept 2016 - Dec 2016]</span>                                        
+                                    <div style="display: table-cell; text-align: left; width: 100%" class="site-text-subsubheader">
+                                    <span>[Jan 2014 - May 2014]</span>&nbsp;&nbsp;
+                                        <span>Software Engineering Intern</span>
+                                        
                                     </div>
                                 </div>
-                            </div>                                
-                            <div style="width: 100%" class="site-container-sm"> 
-                                <span>An AI assistant which scans email text to extract questions which needs to be answered. On these sentences, Machine Learning is applied to determine type of questions and is mapped to an HTML form.</span>          
-                            </div>  
+                            </div>                                                            
                         </li>
-                        <li>
-                            <div style="display: table; width: 100%">
+                        <li style="padding-top: 0px;">
+                             <div style="display: table; width: 100%">
                                 <div style="display: table-row;">
-                                    <div style="display: table-cell; text-align: left; width: 50%">
-                                        <span class="site-text-subheader site-underline">Email Text to UI</span>
-                                    </div>
-                                    <div style="display: table-cell; text-align: right; width: 50%">
-                                        <span class="site-text-subsubheader site-underline">[Source]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader site-underline">[Report]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader">[Sept 2016 - Dec 2016]</span>                                        
+                                    <div style="display: table-cell; text-align: left; width: 100%">
+                                        <span class="site-text-subheader site-underline">Intuit Inc.</span>
+                                    </div>                                    
+                                </div>                                
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 100%" class="site-text-subsubheader">                                    
+                                        <span>[Jun 2013 - Jul 2013]</span>&nbsp;&nbsp;
+                                        <span>Software Engineering Intern</span>
                                     </div>
                                 </div>
-                            </div>                                
-                            <div style="width: 100%" class="site-container-sm"> 
-                                <span>An AI assistant which scans email text to extract questions which needs to be answered. On these sentences, Machine Learning is applied to determine type of questions and is mapped to an HTML form.</span>          
-                            </div>  
-                        </li>                        
+                            </div>                                                            
+                        </li>  
+                        <li style="padding-top: 0px;">
+                             <div style="display: table; width: 100%">
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 100%">
+                                        <span class="site-text-subheader site-underline">Frappant Technologies Pvt. Ltd.</span>
+                                    </div>                                    
+                                </div>                                
+                                <div style="display: table-row;">
+                                    <div style="display: table-cell; text-align: left; width: 100%" class="site-text-subsubheader">
+                                    <span>[Jun 2012 - Jul 2012]</span>&nbsp;&nbsp;                                        
+                                        <span>Software Engineering Intern</span>
+                                    </div>
+                                </div>
+                            </div>                                                            
+                        </li>                   
                     </ul>
                 </div>   
-                <div class="site-container site-text">          
+                <div class="site-container site-text" style="padding-top: 0px" id="activites">          
+                    <div class="site-text-header">Activities</div> 
+                    <div style="width: 100%">
+                        <ul style="list-style-type: disc">
+                            <li class="site-container-sm">
+                                 As part of a venturecity 24-hour hackathon @ Microsoft R&amp;D, Bangalore, we sought to develop a real time sentiment analysis of twitter feed filtered by hashtags to determine which political party has vote of the majority by the people.
+                            </li>
+                            <li class="site-container-sm">
+                                 Best mobile application themed “Hacking for Democracy” (to aid in the Indian General Elections) for a real-time sentiment analysis of Twitter feeds to obtain statistics reflecting the mood of the nation built during a hackathon held at Microsoft R&amp;D, Bangalore.
+                            </li>                
+                            <li class="site-container-sm" >
+                                 Part of organizing team of Design and Innovation workshop held at PES Institute of Technology in collaboration with the Massachusetts Institute of Technology (MIT Media Labs-‘13).                                                        
+                            </li>
+                        </ul>
+                    </div>                                       
+                </div>   
+                <div class="site-container site-text" style="padding-top: 0px" id="photography">          
+                    <div class="site-text-header">Photography</div> 
+                    <div class="site-container-sm" style="width: 100%">
+                        <br />
+                        <div style="width:100%;height:500px%;text-align:center;margin:auto;" ><object width="100%" height="100%" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"> <param name="flashvars" value="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Fankursarda%2Fshow&amp;page_show_back_url=%2Fphotos%2Fankursarda%2F&amp;user_id=144175084@N03" /> <param name="allowFullScreen" value="true" /> <param name="src" value="https://www.flickr.com/apps/slideshow/show.swf?v=71649" /> <embed width="100%" height="500" type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=71649" flashvars="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Fankursarda%2Fshow&amp;page_show_back_url=%2Fphotos%2Fankursarda%2F&amp;user_id=144175084@N03" allowFullScreen="true" /> </object></div>
+                    </div>                   
+                </div>   
+                <div class="site-container site-text" style="padding-top: 0px" id="contact">          
                     <div class="site-text-header">Contact</div>
                     <ul>
                         <li style="padding-top: 0px;">
-                             <div style="display: table; width: 100%">
-                                <div style="display: table-row;">
-                                    <div style="display: table-cell; text-align: left; width: 50%">
-                                        <span class="site-text-subheader site-underline">Email Text to UI</span>
-                                    </div>
-                                    <div style="display: table-cell; text-align: right; width: 50%">
-                                        <span class="site-text-subsubheader site-underline">[Source]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader site-underline">[Report]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader">[Sept 2016 - Dec 2016]</span>                                        
-                                    </div>
-                                </div>
-                            </div>                                
-                            <div style="width: 100%" class="site-container-sm"> 
-                                <span>An AI assistant which scans email text to extract questions which needs to be answered. On these sentences, Machine Learning is applied to determine type of questions and is mapped to an HTML form.</span>          
-                            </div>  
+                            <span class="site-text-subheader site-underline"><a target="_blank" href="https://bit.ly/ankur-sarda-resume">Resume</a></span>
                         </li>
-                        <li>
-                            <div style="display: table; width: 100%">
-                                <div style="display: table-row;">
-                                    <div style="display: table-cell; text-align: left; width: 50%">
-                                        <span class="site-text-subheader site-underline">Email Text to UI</span>
-                                    </div>
-                                    <div style="display: table-cell; text-align: right; width: 50%">
-                                        <span class="site-text-subsubheader site-underline">[Source]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader site-underline">[Report]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader">[Sept 2016 - Dec 2016]</span>                                        
-                                    </div>
-                                </div>
-                            </div>                                
-                            <div style="width: 100%" class="site-container-sm"> 
-                                <span>An AI assistant which scans email text to extract questions which needs to be answered. On these sentences, Machine Learning is applied to determine type of questions and is mapped to an HTML form.</span>          
-                            </div>  
+                        <li style="padding-top: 0px;">
+                            <span class="site-text-subheader site-underline"><a target="_blank" href="https://www.linkedin.com/in/ankur-sarda">LinkedIn</a></span>
                         </li>
-                        <li>
-                            <div style="display: table; width: 100%">
-                                <div style="display: table-row;">
-                                    <div style="display: table-cell; text-align: left; width: 50%">
-                                        <span class="site-text-subheader site-underline">Email Text to UI</span>
-                                    </div>
-                                    <div style="display: table-cell; text-align: right; width: 50%">
-                                        <span class="site-text-subsubheader site-underline">[Source]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader site-underline">[Report]</span>&nbsp;&nbsp;
-                                        <span class="site-text-subsubheader">[Sept 2016 - Dec 2016]</span>                                        
-                                    </div>
-                                </div>
-                            </div>                                
-                            <div style="width: 100%" class="site-container-sm"> 
-                                <span>An AI assistant which scans email text to extract questions which needs to be answered. On these sentences, Machine Learning is applied to determine type of questions and is mapped to an HTML form.</span>          
-                            </div>  
-                        </li>                        
+                        <li style="padding-top: 0px;">
+                            <span class="site-text-subheader site-underline"><a target="_blank" href="https://github.com/sardankur">GitHub</a></span> 
+                        </li>
+                        <li style="padding-top: 0px;">
+                            <span class="site-text-subheader site-underline">sardankur@gmail.com</span> 
+                        </li>
                     </ul>
-                </div>                   
+                    <div class="site-container-sm">                                             
+                    </div>
+                </div>   
+                <div class="site-container site-text" style="padding-top: 0px">
+                    <div style="display: table; width: 100%">
+                        <div style="display: table-row; width: 100%">
+                            <div style="display: table-cell; width: 100%; text-align: center">
+                                Made by ME
+                            </div>
+                        </div>
+                    </div>
+                </div>                
 			</div>
 		</div>
 	</body>
