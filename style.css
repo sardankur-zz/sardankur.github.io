@@ -100,3 +100,18 @@ li {
 .site-list-item {
 	display: list-item;
 }
+
+.site-table {
+	border: 1px solid black;
+}
+
+.site-table-cell {
+	display: table-cell;
+	padding: 10px;
+	text-align: left;
+	vertical-align: top
+}
+
+.site-table-border-bottom {
+	border-bottom : 1px solid black;
+}
